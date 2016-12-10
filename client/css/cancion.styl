@@ -1,0 +1,101 @@
+@import url(icons.css)
+@import url(icon-locked.css)
+@font-face
+	font-family 'Poppins-Light'
+	src url(../fonts/Poppins/Poppins-Light.ttf)
+@font-face
+	font-family 'Poppins-Regular'
+	src url(../fonts/Poppins/Poppins-Regular.ttf)
+	
+verde-taliam = #00c7c4
+blanco = #fff
+verde-spotify = #84bd00
+anaranjado-soundcloud = #fe8323
+verde-oscuro = #00B3B0
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+html
+	font-size 14px
+	font-family 'Poppins-Light'
+	
+.background-song1
+	background-image url(http://img.youtube.com/vi/MX59reg-dAU/0.jpg)
+.background-song2
+	background-image url(../taliam-canciones/fondo-cancion2.jpg)
+.background-song3
+	background-image url(../taliam-canciones/fondo-cancion3.jpg)
+.background-song4 
+	background-image url(../taliam-canciones/fondo-cancion4.jpg)
+.background-song5
+	background-image url(../taliam-canciones/fondo-cancion5.jpg)
+.background-song6 
+	background-image url(../taliam-canciones/fondo-cancion6.jpg)
+.background-song7
+	background-image url(../taliam-canciones/fondo-cancion7.jpg)
+	
+header 
+	nav
+		.container
+			.side-nav 
+				li 
+					a 
+						&:hover 
+							background-color verde-oscuro
+					&:nth-of-type(2)
+						background-color verde-taliam
+						a 
+							font-family 'Poppins-Light'
+							color blanco !important
+							&:hover
+								background-color verde-oscuro
+					&:nth-of-type(3)
+						background-color blanco
+						a
+							font-family 'Poppins-Regular'
+							color verde-taliam !important
+							&:hover 
+								background-color blanco
+.section-remix-container
+	.container 
+		.row-remix 
+			.col-remix 
+				.button-spotify
+					span 
+						color verde-spotify
+				.button-soundcloud
+					span 
+						color anaranjado-soundcloud
+@media screen and (min-width: 993px)
+	header 
+		nav
+			.nav-wrapper
+				.hide-on-med-and-down
+					li 
+						a 
+							&:hover
+								background-color verde-oscuro
+						&:nth-of-type(1)
+							a 
+								&:hover
+									background-color verde-oscuro
+								&:after
+									width 0
+									height 0
+						&:nth-of-type(2)
+							a 
+								position relative
+								&:hover 
+									background-color verde-taliam
+								&:after
+									content ''
+									width 100%
+									height 5px
+									background-color blanco
+									position absolute
+									left 0
+									top 0
+						

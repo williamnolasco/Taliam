@@ -1,0 +1,129 @@
+doctype html
+html(lang="es")
+	head 
+		meta(charset="utf-8")
+		title Taliam | Remix's
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0")
+		meta(name="author", content="Taliam")
+		meta(name="description", content="Dale un giro a tu día, viviendo la música electrónica de una manera diferente.")
+		meta(name="keyword", content="taliam, musica electronica, dj, latinoamerica, lo ultimo de la musica electronica, taliam.co, vive la musica de una manera diferente, dale un giro a tu dia, lo mejor de la musica electronica")
+		link(rel="icon", type="image/png", href="client/img/taliam-logo-circular.png")
+		link(rel="stylesheet", type="text/css", href="client/css/footer.css")
+		link(rel="stylesheet", type="text/css", href="client/css/materialize.min.css")
+		link(rel="stylesheet", type="text/css", href="client/css/remix.css")
+		link(rel="stylesheet", type="text/css", href="client/css/sweetalert.css")
+		link(rel="stylesheet", type="text/css", href="client/css/menu-fijo.css")
+	body 
+		include blocks/menu-fijo.pug
+		section.section-remix-container
+			.container
+				.row.row-encabezado(style="margin-bottom: 40px;")
+					.col.s12.col-encabezado
+						span.icon-vynil
+						p Los nuevos y mejores Remixes:
+				.row.row-remix
+					.col.s12.m6.l4.col-remix
+						.remix-content
+							.remix-image.remix-image1
+								video#remix.remix
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Troye Sivan - WILD (Young Bombs Remix) ft. Alessia Cara
+						a(href="https://www.youtube.com/watch?v=0x8Nt7sMwxc", target="_blank").btn.button-youtube
+							| Ver en 
+							span.icon-youtube2
+						.like-dislike
+							span.icon-heart.icon-like-dislike
+							span.icon-heart-broken.icon-like-dislike
+					.col.s12.m6.l4.col-remix
+						.remix-content
+							.remix-image.remix-image2
+								video#remix.remix
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p marshmello - Alone (Speaker of the House Remix)
+						a(target='_blank').btn.button-youtube.button-soundcloud.button-remix2
+							| Escuchar en 
+							span.icon-soundcloud
+						.like-dislike
+							span.icon-heart.icon-like-dislike
+							span.icon-heart-broken.icon-like-dislike
+					.col.s12.m6.l4.col-remix
+						.remix-content
+							.remix-image.remix-image3
+								video#remix.remix
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Jesper Jenset - High (Young Bombs Remix)
+						a(target='_blank').btn.button-youtube.button-remix3
+							| Ver en 
+							span.icon-youtube2
+						.like-dislike
+							span.icon-heart.icon-like-dislike
+							span.icon-heart-broken.icon-like-dislike
+					.col.s12.m6.l4.col-remix
+						.remix-content
+							.remix-image.remix-image4
+								video#remix.remix
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Tired Of Talking (Young Bombs Remix)
+						a(target='_blank').btn.button-youtube.button-soundcloud.button-remix4
+							| Escuchar en 
+							span.icon-soundcloud
+						.like-dislike
+							span.icon-heart.icon-like-dislike
+							span.icon-heart-broken.icon-like-dislike
+					.col.s12.m6.l4.col-remix
+						.remix-content
+							.remix-image.remix-image5
+								video#remix.remix
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Troye Sivan X Alessia Cara - WILD (Young Bombs Remix)
+						a(target='_blank').btn.button-youtube.button-remix5
+							| Ver en 
+							span.icon-youtube2
+						.like-dislike
+							span.icon-heart.icon-like-dislike
+							span.icon-heart-broken.icon-like-dislike
+					.col.s12.m6.l4.col-remix
+						.remix-content
+							.remix-image.remix-image6
+								video#remix.remix
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Slushii - To Say Goodbye (Original Mix)
+						a(target='_blank').btn.button-youtube.button-remix6
+							| Ver en 
+							span.icon-youtube2
+						.like-dislike
+							span.icon-heart.icon-like-dislike
+							span.icon-heart-broken.icon-like-dislike
+				.row.row-recomendar-remix
+					.col.s12
+						p Sabemos que tienes un buen oído para detectar Remix's buenazos
+						a.btn.button-recommend-remix Recomendar
+				.row.row-remix-data
+					.col.s12
+						input(type="text", placeholder="Nombre del Remix o Dj")
+						a.btn.button-send-information Enviar
+			include blocks/footer.pug			
+
+		script(src="./client/js/jquery-3.1.1.min.js")
+		script(src="./client/js/materialize.min.js")
+		script(src="./client/js/sweetalert.min.js")
+		script(src='./client/js/using-api.js')
+		script(src="./client/js/remix.js")

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icon-locked/icomoon.eot?u692b1');
+  src:  url('../icon-locked/icomoon.eot?u692b1#iefix') format('embedded-opentype'),
+    url('../icon-locked/icomoon.ttf?u692b1') format('truetype'),
+    url('../icon-locked/icomoon.woff?u692b1') format('woff'),
+    url('../icon-locked/icomoon.svg?u692b1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-locked1:before {
+  content: "\e900";
+}
+.icon-locked2:before {
+  content: "\e917";
+}
+

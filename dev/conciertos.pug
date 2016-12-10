@@ -1,0 +1,78 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Taliam | Conciertos
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0")
+		meta(name="author", content="Taliam")
+		meta(name="description", content="Dale un giro a tu día, viviendo la música electrónica de una manera diferente.")
+		meta(name="keyword", content="taliam, musica electronica, dj, latinoamerica, lo ultimo de la musica electronica, taliam.co, vive la musica de una manera diferente, dale un giro a tu dia, lo mejor de la musica electronica")
+		link(rel="icon", type="image/png", href="client/img/taliam-logo-circular.png")
+		link(rel="stylesheet", type="text/css", href="client/css/materialize.min.css")
+		link(rel="stylesheet", type="text/css", href="client/css/concierto.css")
+		link(rel="stylesheet", type="text/css", href="client/css/menu-fijo.css")
+		link(rel="stylesheet", type="text/css", href="client/css/footer.css")
+		link(rel="stylesheet", type="text/css", href="client/css/sweetalert.css")
+	body 
+		include blocks/menu-fijo.pug
+		section.section-concert-container
+			.container
+				.row.row-header-text
+					.col.s12.col-header-text
+						span.icon-vynil
+						p Cientos de conciertos se estan realizando en este momento
+				.row.row-concert-list
+					.col.s12.l6
+						.concert-content
+							.concert-image.background-concert1
+								.concert-background-color
+						.concert-footer
+							p 
+								span.icon-location2
+								| Discoteca Noise - Barranco
+							p 
+								span.icon-calendar
+								| 23 de setiembre 2016
+							a(href="http://www.studio92.com/campanas/studio-92-esta-de-aniversario-y-lo-celebra-con-la-fiesta-aftercluv-noticia-993286", target="_blank").btn
+								| Más Info
+					.col.s12.l6
+						.concert-content
+							.concert-image.background-concert2
+								.concert-background-color
+						.concert-footer
+							p 
+								span.icon-location2
+								| Parque de la Exposición, Lima-Perú
+							p 
+								span.icon-calendar
+								| 20 de setiembre 2016
+							a(href="http://www.teleticket.com.pe/tlk_formularios/frm_DetalleEventoPrecio.aspx?ceven=REMwoHd8tNc=", target="_blank").btn
+								| Más Info
+					.col.s12.l6
+						.concert-content
+							.concert-image.background-concert3
+								.concert-background-color
+						.concert-footer
+							p 
+								span.icon-location2
+								| Explanada de la Costa Verde, Lima-Perú
+							p 
+								span.icon-calendar
+								| 7 de octubre 2016
+							a(href="http://www.teleticket.com.pe/tlk_formularios/frm_DetalleEventoPrecio.aspx?ceven=me+7OUmVAQw=", target="_blank").btn
+								| Más Info 
+				.row.row-warn
+					.col.s12
+						p La fiesta se pone más divertida si nos juntamos!
+						a.btn.button-warn
+							| Pasar la voz!
+				.row.row-concert-link
+					.col.s12
+						input(type="text", placeholder="Link del evento")
+						a.btn.button-send-information Enviar
+			include blocks/footer.pug  
+									
+		script(src="client/js/jquery-3.1.1.min.js")
+		script(src="client/js/materialize.min.js")
+		script(src="client/js/concierto.js")
+		script(src="client/js/sweetalert.min.js")

@@ -1,0 +1,71 @@
+@font-face
+	font-family 'Poppins-Regular'
+	src url(../fonts/Poppins/Poppins-Regular.ttf)
+
+verde-taliam = #00c7c4
+blanco = #fff
+verde-oscuro = #00B3B0
+
+.link-item-selected
+	background-color blanco
+	a
+		font-family 'Poppins-Regular'
+		color verde-taliam !important
+		&:hover 
+			background-color blanco !important
+
+header
+	nav
+		background-color verde-taliam
+		.container
+			display flex 
+			flex-flow row nowrap
+			justify-content flex-start
+			align-items center
+			.button-collapse
+				display flex
+				flex-flow row nowrap
+				align-items center
+				.icon-subject 
+					font-size 3rem
+			.brand-logo
+				line-height 40px
+				font-family 'Poppins-Regular'
+				font-weight bolder
+				font-size 2.3rem
+			.side-nav
+				width 270px
+				background-color verde-taliam
+				li 
+					margin-bottom 14px
+					a 
+						color blanco
+						font-size 1.25rem
+						padding-left 35px
+						&:hover
+							background-color verde-oscuro
+@media screen and (min-width: 600px)
+	header
+		nav
+			.nav-wrapper
+				.side-nav
+					li
+						margin-bottom 25px
+						a 
+							padding-left 50px 
+@media screen and (min-width: 993px)
+	header
+		nav 
+			.nav-wrapper
+				.button-collapse
+					display none
+				.hide-on-med-and-down
+					position absolute
+					right 0 
+					top 0
+					li 
+						margin 0 15px
+						a 
+							font-size 1.3rem
+							
+					

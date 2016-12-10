@@ -1,0 +1,411 @@
+@import url(icons.css)
+@import url(icon-locked.css)
+@font-face
+	font-family 'Poppins-Light'
+	src url(../fonts/Poppins/Poppins-Light.ttf)
+@font-face
+	font-family 'Poppins-Regular'
+	src url(../fonts/Poppins/Poppins-Regular.ttf)
+	
+blanco = #fff    
+celeste = #03cbf5
+azul = #1073ad
+amarillo = #ffd600 
+verde-taliam = #00c7c4
+//#00b5c5
+plomo = #999
+verde-pasto = #3de498
+negro = #000
+rojo-youtube = #e62117
+morado-taliam = #6772e5
+//#6772e5
+azul-acero = #1B2B69
+//#02416b
+verde-spotify = #84bd00
+anaranjado-soundcloud = #fe8323
+verde-oscuro = #00B3B0
+rosado = #ff5a60
+verde-claro = #a2e800
+
+estilos_button_remix(color)
+	display flex 
+	flex-flow row nowrap
+	justify-content center
+	align-items center
+	width 210px
+	height 40px
+	background-color transparent
+	font-size 1.15rem
+	color color
+	text-transform none
+	letter-spacing 0px
+	border-radius 2rem
+	border 2px solid color
+	margin-top 40px 
+	margin-bottom 40px
+	box-shadow 0 2px 5px 0 rgba(morado-taliam, 0.16),
+				0 2px 10px 0 rgba(morado-taliam, 0.12)
+	&:hover 
+		box-shadow 0 5px 11px 0 rgba(morado-taliam, 0.18),
+					0 4px 15px 0 rgba(morado-taliam, 0.15)
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+
+html
+	line-height normal
+	font-family 'Poppins-Light'
+	font-size 14px
+	
+.like-dislike-selected
+	color morado-taliam !important
+	border 2px solid morado-taliam !important
+.display-block
+	display block !important
+.remix-image1
+	background-image url(http://img.youtube.com/vi/MX59reg-dAU/0.jpg) 
+.remix-image2
+	background-image url(../taliam-remix/fondo-remix2.jpg)
+.remix-image3
+	background-image url(../taliam-remix/fondo-remix3.jpg)
+.remix-image4
+	background-image url(../taliam-remix/fondo-remix4.jpg)
+.remix-image5
+	background-image url(../taliam-remix/fondo-remix5.jpg) 
+.remix-image6
+	background-image url(../taliam-remix/fondo-remix6.jpg)
+.remix-image7
+	background-image url(../taliam-remix/fondo-remix7.jpg) 
+.button-spotify
+	span 
+		color verde-spotify !important
+.button-soundcloud
+	span 
+		color anaranjado-soundcloud !important
+.locked-song
+	width 100%
+	height 100%
+	background-color morado-taliam
+	position absolute
+	left 0
+	top 0
+	.days-released
+		display flex 
+		flex-flow row wrap 
+		justify-content center
+		align-items center
+		width 100%
+		height 50px 
+		background-color transparent
+		border-bottom 3px dashed blanco
+		position absolute
+		left 0
+		top 0
+		p 
+			font-size 1rem
+			color blanco
+	span 
+		color blanco
+		font-size 4rem
+		position absolute
+		left 50%
+		top 50%
+		-webkit-transform translateX(-50%) translateY(-50%)
+		transform translateX(-50%) translateY(-50%)
+	a
+		estilos_button_remix(blanco)
+		width 180px
+		height 37px
+		font-size 1.1rem
+		margin 0
+		position absolute
+		left 50%
+		bottom 80px
+		-webkit-transform translateX(-50%)
+		transform translateX(-50%)
+		&:hover
+			background-color transparent
+.guess
+	display none
+	width 100%
+	height 100%
+	background-color morado-taliam
+	position absolute
+	left 0
+	top 0
+	.content
+		display flex 
+		flex-flow column wrap 
+		justify-content center
+		align-items center
+		width 80%
+		height auto
+		position absolute
+		left 50%
+		top 50%
+		-webkit-transform translateX(-50%) translateY(-50%)
+		transform translateX(-50%) translateY(-50%)
+		p 
+			font-size 1rem
+			color blanco
+			text-align center
+		.row-letters
+			display flex
+			flex-flow row nowrap
+			justify-content center
+			margin-top 30px
+			p 
+				display flex 
+				flex-flow row nowrap
+				justify-content center
+				align-items center
+				width 50px 
+				height 50px
+				font-size 1.2rem
+				border 2px solid #fff
+				border-radius 0.5rem
+				margin 0 10px
+				cursor pointer
+		a 
+			width 70%
+			height 35px
+			background-color transparent
+			border-radius 2rem
+			border 2px solid blanco
+			font-size 0.9rem
+			color blanco
+.display-none
+	display none
+	
+header 
+	nav
+		.container
+			.side-nav 
+				li 
+					&:nth-of-type(2)
+						background-color blanco
+						a
+							font-family 'Poppins-Regular'
+							color verde-taliam !important
+							&:hover
+								background-color blanco
+.section-remix-container
+	width 100%
+	height auto
+	background-color blanco
+	padding-top 70px
+	padding-bottom 70px
+	position relative
+	left 0
+	top 0
+	.container
+		.row-encabezado
+			.col-encabezado
+				display flex 
+				flex-flow row nowrap
+				justify-content center
+				align-items center
+				span
+					color verde-taliam
+					font-size 2rem
+				p 
+					color plomo
+					font-size 1.4rem
+					text-align center
+					margin-left 15px
+		.row-remix
+			.col-remix
+				display flex 
+				flex-flow column wrap
+				align-items center
+				border-bottom 2px dashed plomo
+				padding-top 40px
+				padding-bottom 40px
+				margin-bottom 30px
+				.remix-content
+					width 90%	
+					height 350px
+					position relative
+					left 0
+					top 0
+					.remix-image
+						width 100%
+						height 73%
+						background-position center
+						background-size cover
+						position absolute
+						left 0
+						top 0
+						&:before, &:after
+							content ''
+							width 20px 
+							height 20px 
+							position absolute
+							top -10px
+						&:before
+							border-left 3px solid morado-taliam
+							border-top 3px solid morado-taliam
+							left -10px
+						&:after
+							border-right 3px solid morado-taliam
+							border-top 3px solid morado-taliam
+							right -10px 
+						.remix-background-color
+							display flex 
+							flex-flow row nowrap
+							justify-content center 
+							align-items center
+							width 100%
+							height 100%
+							background-color rgba(azul-acero, 0.8)
+							position absolute
+							left 0
+							top 0
+							.button-play-pause
+								display flex 
+								flex-flow row nowrap
+								justify-content center 
+								align-items center
+								width 100px
+								height 100px
+								background-color transparent
+								border-radius 50%
+								border 5px solid blanco
+								span 
+									color blanco
+									font-size 6rem
+									cursor pointer
+					.remix-footer
+						display flex 
+						flex-flow row wrap 
+						justify-content center 
+						align-items center
+						width 100%
+						height 27%
+						background-color morado-taliam
+						padding 0 10px
+						position absolute
+						left 0
+						bottom 0
+						&:before, &:after 
+							content ''
+							width 20px 
+							height 20px 
+							position absolute
+							bottom -10px 
+						&:before
+							border-left 3px solid morado-taliam
+							border-bottom 3px solid morado-taliam
+							left -10px
+						&:after 
+							border-right 3px solid morado-taliam
+							border-bottom 3px solid morado-taliam
+							right -10px 
+						p 
+							color blanco
+				.button-youtube
+					estilos_button_remix(morado-taliam)
+					span 
+						font-size 1.5rem
+						color rojo-youtube
+						margin-left 10px
+				.like-dislike 
+					display flex 
+					flex-flow row nowrap
+					justify-content center
+					align-items center
+					width 100%
+					height 50px
+					span 
+						color plomo
+						font-size 1.6rem
+						border-radius 2rem
+						border 2px solid plomo
+						padding 10px 
+						margin 0 40px
+						cursor pointer
+		.row-recomendar-remix	
+			margin-bottom 0px
+			.col 
+				display flex 
+				flex-flow column wrap
+				justify-content center
+				align-items center
+				p 
+					color plomo
+					font-size 1.3rem
+					text-align center
+				a 
+					estilos_button_remix(morado-taliam)
+					margin 0
+					margin-top 20px
+		.row-remix-data
+			display none
+			margin-top 60px
+			margin-bottom 0
+			.col 
+				display flex 
+				flex-flow column wrap 
+				justify-content center 
+				align-items center
+				input 
+					width 90%
+					color #999
+					font-size 1.2rem
+					text-align center
+					&:focus
+						background-color transparent
+						border-bottom 1px solid morado-taliam !important
+						box-shadow 0 1px 0 0 morado-taliam
+				a 
+					estilos_button_remix(morado-taliam)
+					margin 0
+					margin-top 10px
+@media screen and (min-width: 350px)
+	.section-remix-container
+		.container
+			.row-remix
+				.col-remix
+					.remix-content
+						width 250px
+@media screen and (min-width: 601px)
+	.section-remix-container
+		.container
+			width 90%
+			.row-remix-data
+				.col 
+					input 
+						width 500px
+@media screen and (min-width: 993px)
+	header
+		nav 
+			.nav-wrapper
+				.hide-on-med-and-down
+					li 
+						a 
+						&:nth-of-type(1)
+							a 
+								position relative
+								&:hover 
+									background-color verde-taliam
+								&:after
+									content ''
+									width 100%
+									height 5px
+									background-color blanco
+									position absolute
+									left 0
+									top 0
+	/*.section-remix-container
+		.container 
+			width 90%
+			.row-remix 
+				.col-remix
+					&:nth-of-type(7)
+						position relative
+						left 50%
+						-webkit-transform translateX(-50%)
+						transform translateX(-50%)*/
+						

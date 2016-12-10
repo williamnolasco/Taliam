@@ -1,0 +1,147 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Taliam
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0")
+		meta(property="fb:pages",content="1238309299573580")
+		meta(name="author", content="Taliam")
+		meta(name="description", content="Dale un giro a tu día, viviendo la música electrónica de una manera diferente.")
+		meta(name="keyword", content="taliam, musica electronica, dj, latinoamerica, lo ultimo de la musica electronica, taliam.co, vive la musica de una manera diferente, dale un giro a tu dia, lo mejor de la musica electronica")
+		link(rel="icon" type="image/png" href="client/img/taliam-logo-circular.png")
+		link(rel="stylesheet", type="text/css", href="client/css/materialize.min.css")
+		link(rel="stylesheet", type="text/css", href="client/css/main.css")
+	body
+		header
+			nav
+				.nav-wrapper.container
+					a(href="#", data-activates="mobile-demo", class="button-collapse")
+						span(class="icon-subject")
+					a(href="#", class="brand-logo") TALIAM
+					ul.hide-on-med-and-down
+						li
+							a(href="remixes.html") REMIX'S
+						li
+							a(href="originales.html") ORIGINALES
+						li
+							a(href="conciertos.html") CONCIERTOS
+					ul.side-nav#mobile-demo
+						li.link-item-selected
+							a(href="index.html") HOME
+						li 
+							a(href="remixes.html") REMIX'S	
+						li
+							a(href="originales.html") ORIGINALES
+						li
+							a(href="conciertos.html") CONCIERTOS
+		section.cover-page-principal-container
+			.cover-page-principal-background-color
+				.container.opening-message
+					.row
+						.col.s12
+							.vertically-displacing-list
+								ul
+									li DALE UN GIRO A TU DÍA
+									li DIVIÉRTETE
+									li DEJATE LLEVAR
+							p Con lo último y mejor de la música electrónica, de una manera diferente.
+							p Queremos que disfrutes cada día al máximo y por eso te traemos una nueva forma de vivir la música.
+					.row(style="margin-bottom: 0;")
+						.col.s12.col-button
+							a(href="originales.html").btn
+								| Disfrutar Ya!			
+				span(class="icon-keyboard_arrow_down-o")
+		section.cover-page-remix-container
+			.container
+				.row
+					.col.s12.col-flex
+						p 
+							| Los 
+							span MEJORES 
+							| Remix's de tus canciones preferidas.	
+						p 
+							| Los 
+							span MEJORES
+							| Remix's de tus canciones preferidas. Cada semana, ingresarán 7 nuevos.
+				.row
+					.col.s12.col-button
+						a(href="remixes.html").btn
+							| Explorar Remixes
+			span(class="icon-keyboard_arrow_down-o")
+		section.cover-page-new-songs-container
+			.cover-page-new-songs-background-color
+				.container 
+					.row 
+						.col.s12.col-flex
+							p
+								| Las músicas más
+								span RECIENTES
+								| de tus Dj favoritos.
+							p 
+								| Las músicas más recientes de tus Dj
+								span FAVORITOS
+								| Todos los días tendras nueva y buena música.
+					.row
+						.col.s12.col-button
+							a(href="originales.html").btn
+								| Explorar Nuevos
+				span(class="icon-keyboard_arrow_down-o")
+		section.cover-page-unique-feature-container
+			.container
+				.row
+					.col.s12.col-flex
+						p 
+							|Cada día se liberan 2 canciones y al terminar la semana se 
+							span AUTODESTRUYEN
+						p
+							|Cada día se liberan 2 canciones y al terminar la semana se
+							span AUTODESTRUYEN
+							|Puedes liberar más canciones, pero te lo advertirnos ¡No será fácil!
+				.row
+					.col.s12.col-button
+						a(href="remixes.html").btn
+							| Interesante!
+			span(class="icon-keyboard_arrow_down-o")
+		section.cover-page-concierto-container
+			.cover-page-concierto-background-color
+				.container
+					.row 
+						.col.s12.col-flex
+							p
+								| Conciertos, festivales, eventos, entérate de 
+								span TODO
+								| lo que va a pasar en tu país.
+							p 
+								| Encuentra conciertos, festivales, eventos, fiestas al que asistir <br> ¿Vas a alguno de estos? <br> Avísanos para ir
+								span TODOS.
+					.row 
+						.col.s12.col-button
+							a(href="conciertos.html").btn
+								| Ver Agenda
+				span(class="icon-keyboard_arrow_down-o")
+		section.cover-page-message-final-container
+			.container.container-message
+				.row 
+					.col.s12.col-message
+						p 
+							| Tú pones la chispa, nosotros la música
+							span NO ESPERES A QUE SEA VIERNES!
+			.footer-container
+				.footer
+					.container
+						.row(style="margin-bottom: 0;")
+							.col.s12
+								a(href="https://www.facebook.com/Taliam.co", target="_blank").icon-facebook
+								a(href="https://www.instagram.com/taliam.co/", target="_blank").icon-instagram
+				.copyright
+					.container
+						.row(style="margin-bottom: 0;")
+							.col.s12
+								p 
+									| Hecho con mucho
+									span.icon-heart3
+								p &copy 2016 Taliam. Todos los derechos reservados	
+		
+		script(src="client/js/jquery-3.1.1.min.js")
+		script(src="client/js/materialize.min.js")
+		script(src="client/js/main.js")

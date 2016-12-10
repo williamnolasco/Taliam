@@ -1,0 +1,270 @@
+@import url(icons.css)
+@font-face 
+	font-family 'Poppins-Light'
+	src url(../fonts/Poppins/Poppins-Light.ttf)
+@font-face 
+	font-family 'Poppins-Regular'
+	src url(../fonts/Poppins/Poppins-Regular.ttf)
+
+blanco = #fff
+verde-taliam = #00c7c4
+plomo = #999
+negro = #000
+amarillo = #00c7c4
+morado-taliam = #6772e5
+azul-acero = #02416b
+verde-oscuro = #00B3B0
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+html
+	font-family 'Poppins-Light'
+	font-size 14px
+
+.btn 
+	width 200px
+	height 40px
+	background-color transparent
+	font-size 1.2rem
+	color blanco
+	text-transform none
+	border-radius 2rem
+	border 2px solid blanco
+	box-shadow none
+	margin-top 20px
+	&:hover
+		background-color morado-taliam
+		color blanco !important
+.background-concert1
+	background-image url(../taliam-conciertos/fondo-concierto1.jpg)
+	background-position left center !important
+.background-concert2
+	background-image url(../taliam-conciertos/fondo-concierto2.jpg)
+.background-concert3
+	background-image url(../taliam-conciertos/fondo-concierto3.jpg)
+.block
+	display block !important
+header
+	nav
+		.nav-wrapper
+			.side-nav
+				li 
+					&:nth-of-type(4)
+						background-color blanco
+						a 
+							color verde-taliam
+							font-family 'Poppins-Regular'
+							&:hover
+								background-color blanco
+	
+.section-concert-container
+	width 100%
+	height auto
+	padding 70px 0
+	position relative
+	left 0
+	top 0
+	overflow-x hidden
+	.container 
+		.row-header-text
+			.col-header-text 
+				display flex
+				flex-flow row nowrap
+				justify-content center
+				align-items center
+				span
+					font-size 2rem
+					color verde-taliam
+				p 
+					font-size 1.4rem
+					color plomo
+					text-align center
+					margin-left 15px
+		.row-concert-list
+			.col
+				display flex 
+				flex-flow column wrap 
+				justify-content center
+				align-items center
+				margin-top 70px
+				margin-bottom 70px
+				.concert-content
+					width 90%
+					height 300px
+					position relative
+					left 0
+					top 0
+					&:before, &:after
+						content ''
+						width 20px 
+						height 20px 
+						position absolute
+						top -20px
+					&:before
+						border-left 3px solid morado-taliam
+						border-top 3px solid morado-taliam
+						left -20px
+					&:after
+						border-right 3px solid morado-taliam
+						border-top 3px solid morado-taliam
+						right -20px 
+					.concert-image
+						width 100%
+						height 100%
+						background-size cover
+						background-position center 
+						position absolute
+						left 0
+						top 0
+						.concert-background-color
+							width 100%
+							height 100%
+							background-color rgba(azul-acero, 0.3)
+							position absolute
+							left 0
+							top 0
+				.concert-footer
+					display flex 
+					flex-flow column wrap 
+					justify-content center 
+					align-items center
+					width 260px
+					height 220px
+					background-color morado-taliam
+					padding 0 10px
+					position relative
+					left 0
+					top 0
+					&:before, &:after 
+						content ''
+						width 20px 
+						height 20px 
+						position absolute
+						bottom -20px
+					&:before
+						border-left 3px solid morado-taliam
+						border-bottom 3px solid morado-taliam
+						left -20px
+					&:after 
+						border-right 3px solid morado-taliam
+						border-bottom 3px solid morado-taliam
+						right -20px 
+					p 
+						font-size 1.1rem
+						color blanco
+						text-align center
+						&:nth-of-type(2)
+							margin-top 15px
+						span 
+							font-size 1.4rem
+							color verde-taliam
+							margin-right 10px
+		.row-warn
+			margin-bottom 0
+			.col
+				display flex 
+				flex-flow column wrap 
+				justify-content center 
+				align-items center
+				border-top 2px dashed plomo
+				padding-top 50px
+				p 
+					font-size 1.4rem
+					color plomo	
+					text-align center
+				a 
+					display flex 
+					flex-flow row nowrap
+					justify-content center 
+					align-items center
+					width 250px
+					height 45px	
+					font-size 1.2rem
+					color morado-taliam
+					border 2px solid morado-taliam
+					&:hover 
+						background-color blanco 
+						color morado-taliam !important
+		.row-concert-link
+			display none
+			margin-top 60px
+			margin-bottom 0
+			.col 
+				display flex 
+				flex-flow column wrap 
+				justify-content center 
+				align-items center
+				input 
+					width 90%
+					color #999
+					font-size 1.2rem
+					text-align center
+					&:focus
+						border-bottom 1px solid morado-taliam !important
+						box-shadow 0 1px 0 0 morado-taliam
+				a 
+					display flex 
+					flex-flow row nowrap
+					justify-content center
+					align-items center
+					width 250px
+					height 45px	
+					font-size 1.2rem
+					color morado-taliam
+					border 2px solid morado-taliam
+					margin 0
+					margin-top 10px
+					&:hover
+						background-color transparent
+						color morado-taliam !important
+@media screen and (min-width: 350px)
+	.section-concert-container
+		.container
+			.row-concert-list
+				.col 
+					.concert-content
+						width 260px
+@media screen and (min-width: 600px)
+	.section-concert-container
+		.container
+			.row-concert-link
+				.col 
+					input 
+						width 500px
+@media screen and (min-width: 993px)
+	header 
+		nav
+			.nav-wrapper
+				.hide-on-med-and-down
+					li 
+						a 
+							&:hover
+								background-color verde-oscuro
+						&:nth-of-type(3)
+							a 
+								position relative
+								&:hover 
+									background-color verde-taliam
+								&:after
+									content ''
+									width 100%
+									height 5px
+									background-color blanco
+									position absolute
+									left 0
+									top 0
+	.section-concert-container
+		.container
+			.row-concert-list
+				.col 
+					&:nth-of-type(3)
+						position relative
+						left 50%
+						transform translateX(-50%)
+						
+				
+					
+	

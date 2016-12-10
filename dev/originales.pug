@@ -1,0 +1,131 @@
+doctype html
+html(lang="es")
+	head 
+		meta(charset="utf-8")
+		title Taliam | Originales
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0")
+		meta(name="author", content="Taliam")
+		meta(name="description", content="Dale un giro a tu día, viviendo la música electrónica de una manera diferente.")
+		meta(name="keyword", content="taliam, musica electronica, dj, latinoamerica, lo ultimo de la musica electronica, taliam.co, vive la musica de una manera diferente, dale un giro a tu dia, lo mejor de la musica electronica")
+		link(rel="icon", type="image/png", href="client/img/taliam-logo-circular.png")
+		link(rel="stylesheet", type="text/css", href="client/css/menu-fijo.css")
+		link(rel="stylesheet", type="text/css", href="client/css/footer.css")
+		link(rel="stylesheet", type="text/css", href="client/css/materialize.min.css")
+		link(rel="stylesheet", type="text/css", href="client/css/remix.css")
+		link(rel="stylesheet", type="text/css", href="client/css/cancion.css")
+		link(rel="stylesheet", type="text/css", href="client/css/sweetalert.css")
+	body 
+		include blocks/menu-fijo.pug
+		section.section-remix-container
+			.container
+				.row.row-encabezado(style="margin-bottom: 40px;")
+					.col.s12.col-encabezado
+						span.icon-vynil
+						p Canciones recien salidas del horno:	
+				.row.row-remix
+					.col.s12.l6.col-remix
+						.remix-content
+							.remix-image.original-image1
+								audio.remix(src="client/taliam-canciones/cancion1.mp3")
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p KSHMR & Tigerlily - Invisible Children
+						a(href="https://youtu.be/3QVYpRdb2l0 ", target="_blank").btn.button-youtube
+							| Ver en 
+							span.icon-youtube2
+						.like-dislike
+							span.icon-like-dislike.icon-heart
+							span.icon-like-dislike.icon-heart-broken
+					.col.s12.l6.col-remix
+						.remix-content
+							.remix-image.original-iamge2
+								audio.remix(src="client/taliam-canciones/cancion2.mp3")
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Quintino x Cheat Codes - Can't Fight It
+						a(target='_blank').btn.button-youtube.button-original2
+							| Ver en 
+							span.icon-youtube2
+						.like-dislike
+							span.icon-like-dislike.icon-heart
+							span.icon-like-dislike.icon-heart-broken
+					.col.s12.l6.col-remix
+						.remix-content
+							.remix-image.original-image3
+								audio.remix(src="client/taliam-canciones/cancion3.mp3")
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Carta - Shanghai
+						a(target='_blank').btn.button-youtube.button-original3
+							| Ver en  
+							span.icon-youtube2
+						.like-dislike
+							span.icon-like-dislike.icon-heart
+							span.icon-like-dislike.icon-heart-broken
+					.col.s12.l6.col-remix
+						.remix-content
+							.remix-image.original-image4
+								audio.remix(src="client/taliam-canciones/cancion4.mp3")
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Borgeous, Loud Luxury - Going Under
+						a(target='_blank').btn.button-youtube.button-original4
+							| Ver en 
+							span.icon-youtube2
+						.like-dislike
+							span.icon-like-dislike.icon-heart
+							span.icon-like-dislike.icon-heart-broken
+					.col.s12.l6.col-remix
+						.remix-content
+							.remix-image.original-image5
+								audio.remix(src="client/taliam-canciones/cancion5.mp3")
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Elephante - Plans (feat. Brandyn Burnette)
+						a(target='_blank').btn.button-youtube.button-soundcloud.button-original5
+							| Escuchar en  
+							span.icon-soundcloud
+						.like-dislike
+							span.icon-like-dislike.icon-heart
+							span.icon-like-dislike.icon-heart-broken
+					.col.s12.l6.col-remix
+						.remix-content
+							.remix-image.original-image6
+								audio.remix(src="client/taliam-canciones/cancion6.mp3")
+								.remix-background-color
+									.button-play-pause
+										span.icons-play-pause.icon-play
+							.remix-footer
+								p Dakota - Long Hot Summer
+						a(target='_blank').btn.button-youtube.button-original6
+							| Ver en  
+							span.icon-youtube2
+						.like-dislike
+							span.icon-like-dislike.icon-heart
+							span.icon-like-dislike.icon-heart-broken
+				.row.row-recomendar-remix
+					.col.s12
+						p Tu eres el mejor jurado, que sabe cuando una música será un Hit
+						a.btn.button-recommend-remix Recomendar
+				.row.row-remix-data
+					.col.s12
+						input(type="text", placeholder="Nombre de la canción o autor")
+						a.btn.button-send-information Enviar
+			include blocks/footer.pug			
+
+		script(src="client/js/jquery-3.1.1.min.js")
+		script(src="client/js/materialize.min.js")
+		script(src="client/js/sweetalert.min.js")
+		script(src="client/js/remix.js")
+		script(src="client/js/cancion.js")
+			

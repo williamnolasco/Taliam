@@ -1,0 +1,649 @@
+@import url(icons.css)
+@import url(instagram.css)
+
+@font-face
+    font-family 'Poppins-Light'
+    src url(../fonts/Poppins/Poppins-Light.ttf)
+@font-face
+    font-family 'Poppins-Regular'
+    src url(../fonts/Poppins/Poppins-Regular.ttf)
+    
+blanco = #fff    
+celeste = #03cbf5
+azul = #1073ad
+naranja = #ffc800
+verde-taliam = #00c7c4
+celeste-claro = #13cdeb
+rosado = #ff6e73
+plomo = #999
+morado-taliam = #6772e5
+azul-acero = #02416b
+verde-pasto = #14F57C
+verde-oscuro = #00B3B0
+
+style_double_stripe(background-color)
+    &:before, &:after
+        content ''
+        height 3px 
+        background-color background-color
+        border-radius 1rem
+        position absolute
+        left 50%
+        -webkit-transform translateX(-50%)
+        transform translateX(-50%)
+    &:before 
+        width 70px
+        top -25px
+    &:after
+        width 35px
+        top -35px
+estilos_texto(color)
+    color color 
+    font-size 1.4rem
+styles_span(color)
+    display block
+    font-size 1.4rem
+    color color 
+    font-family 'Poppins-Regular'
+    font-weight bolder
+styles_btn_background_white()
+    color verde-taliam
+    border 2px solid verde-taliam
+        &:hover 
+            background-color morado-taliam
+            color blanco
+feature_icon()
+    display block
+    margin-right 15%
+    position absolute
+    right 0
+    top 50%
+    -webkit-transform translateY(-50%)
+    transform translateY(-50%)
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+html
+    font-size 14px
+    line-height normal
+body 
+    font-family 'Poppins-Light'
+.icon-subject, .icon-keyboard_arrow_down-o
+    color blanco
+    cursor pointer
+.icon-subject
+    font-size 3rem
+.brand-logo
+    line-height 40px
+    font-family 'Poppins-Regular'
+    font-size 2.3rem !important
+    font-weight bolder
+    z-index 2
+.btn 
+    width 230px
+    height 45px
+    font-size 1.3rem
+    font-family 'Poppins-Regular'
+    background-color transparent
+    //text-transform none
+    border 2px solid blanco
+    border-radius 2rem
+    display flex
+    flex-flow row nowrap
+    justify-content center
+    align-items center
+    letter-spacing 0
+    box-shadow none
+    -webkit-transition all 0.9s ease
+    transition all 0.9s ease
+    &:hover
+        background-color transparent
+        box-shadow none
+        margin-bottom 30px
+        -webkit-transform scale(1.1)
+        transform scale(1.1)
+.icon-keyboard_arrow_down-o
+    font-size 4.2rem
+    position absolute
+    left 50%
+    bottom -20px
+    -webkit-transform translateX(-50%)
+    transform translateX(-50%)
+    -webkit-animation mover_hacia_abajo 0.7s linear infinite alternate
+    animation mover_hacia_abajo 0.7s linear infinite alternate
+@-webkit-keyframes mover_hacia_abajo
+    0%
+        bottom -20px
+    100%
+        bottom 10px
+@keyframes mover_hacia_abajo
+    0%
+        bottom -20px
+    100%
+        bottom 10px
+.col-button
+    display flex 
+    flex-flow row nowrap
+    justify-content center
+    align-items center
+.col-flex
+    display flex 
+    flex-flow column wrap 
+    justify-content center 
+    align-items center
+.link-item-selected
+    background-color blanco
+    a
+        font-family 'Poppins-Regular'
+        color verde-taliam !important
+        &:hover 
+            background-color blanco !important
+p
+    font-size 1.4rem
+        
+body 
+    overflow-x hidden
+
+header
+    nav
+        display block
+        height 60px
+        background-color transparent
+        position absolute
+        z-index 999
+        .nav-wrapper
+            display flex
+            flex-flow row wrap
+            justify-content flex-start
+            align-items center
+            .button-collapse
+                display flex
+                flex-flow row nowrap
+                justify-content center
+                align-items center
+                height 60px
+            .side-nav
+                width 270px
+                background-color verde-taliam
+                li
+                    margin-bottom 14px
+                    &:nth-of-type(1)
+                        margin-top 40%
+                    a 
+                        color blanco 
+                        font-size 1.25rem
+                        padding-left 35px
+                        &:hover
+                            background-color verde-oscuro
+.cover-page-principal-container
+    width 100%
+    height 100vh
+    background-image url(../img/fondo-principal.jpg)
+    background-repeat no-repeat
+    background-size cover
+    background-position center
+    position relative
+    left 0
+    top 0px
+    z-index 1
+    .cover-page-principal-background-color
+        width 100%
+        height 100%
+        background-color rgba(verde-taliam, 0.85)
+        display flex 
+        flex-flow column wrap 
+        justify-content center
+        align-items center
+        position absolute
+        left 0
+        top 0
+        .opening-message
+            padding 20px 0
+            .row
+                &:nth-of-type(1)
+                    margin-bottom 60px
+                    .col
+                        display flex 
+                        flex-flow row wrap 
+                        justify-content center 
+                        align-items center
+                        .vertically-displacing-list
+                            width 100%
+                            height 60px
+                            overflow hidden
+                            ul 
+                                li 
+                                    font-size 1.6rem
+                                    font-family 'Poppins-Regular'
+                                    font-weight bolder
+                                    color blanco
+                                    text-align center
+                                    line-height 60px
+                                    position relative
+                                    top 0
+                                    -webkit-animation desplazando_lista 4s linear infinite alternate
+                                    animation desplazando_lista 4s linear infinite alternate
+                                @-webkit-keyframes desplazando_lista
+                                    0%, 20%
+                                        top 0
+                                    39%, 59%
+                                        top -60px
+                                    79%, 100%
+                                        top -120px
+                                @keyframes desplazando_lista
+                                    0%, 20%
+                                        top 0
+                                    39%, 59%
+                                        top -60px
+                                    79%, 100%
+                                        top -120px
+                                
+                        p 
+                            font-size 1.4rem
+                            color blanco
+                            text-align center
+                            &:nth-of-type(2)
+                                display none
+.cover-page-remix-container
+    background-color blanco
+    width 100%
+    height 100vh
+    display flex 
+    flex-flow column wrap 
+    justify-content center
+    align-items center 
+    position relative
+    left 0
+    top 0
+    .container
+        .row
+            &:nth-of-type(1)
+                margin-top 35px
+                margin-bottom 60px
+                .col
+                    p 
+                        text-align center
+                        color plomo
+                        position relative
+                        style_double_stripe(verde-taliam)
+                        span
+                            styles_span(verde-taliam)
+                        &:nth-of-type(2)
+                            display none
+             &:nth-of-type(2)
+                 margin-bottom 0                     
+                .col-button 
+                    a 
+                        color verde-taliam
+                        border 2px solid verde-taliam
+        img
+            display none
+    .icon-keyboard_arrow_down-o
+        color verde-taliam 
+.cover-page-new-songs-container
+    width 100%
+    height 100vh 
+    background-image url(../img/fondo-musicas-nuevas.jpg)
+    background-size cover 
+    background-position center
+    position relative
+    left 0
+    top 0
+    .cover-page-new-songs-background-color
+        width 100%
+        height 100%
+        background verde-taliam
+        background linear-gradient(to right bottom, 
+                                    rgba(verde-taliam, 0.85) 0%,
+                                    rgba(verde-pasto, 0.85) 100%)
+        display flex 
+        flex-flow column wrap 
+        justify-content center 
+        align-items center
+        position absolute
+        left 0
+        top 0  
+        .container 
+            .row
+                &:nth-of-type(1)
+                    margin-top 35px
+                    margin-bottom 60px
+                    .col 
+                        p 
+                            text-align center
+                            position relative
+                            estilos_texto(blanco)
+                            style_double_stripe(blanco)
+                            span 
+                                styles_span(blanco)
+                            &:nth-of-type(2)
+                                display none
+                &:nth-of-type(2)
+                    margin-bottom 0
+.cover-page-unique-feature-container
+    width 100%
+    height 100vh
+    background-color blanco
+    display flex 
+    flex-flow column wrap 
+    justify-content center 
+    align-items center
+    position relative
+    left 0
+    top 0
+    .container
+        .row
+            &:nth-of-type(1)
+                margin-top 35px
+                margin-bottom 60px
+                .col
+                    p
+                        text-align center
+                        color plomo
+                        position relative
+                        style_double_stripe(verde-taliam)
+                        span 
+                            styles_span(verde-taliam)
+                        &:nth-of-type(2)
+                            display none
+            &:nth-of-type(2)
+                margin-bottom 0
+                .col-button
+                    a 
+                        color verde-taliam
+                        border 2px solid verde-taliam
+    .icon-keyboard_arrow_down-o
+        color verde-taliam    
+.cover-page-concierto-container
+    width 100%
+    height 100vh
+    background-image url(../img/fondo-conciertos.jpg)
+    background-size cover 
+    background-position center 
+    position relative 
+    left 0
+    top 0
+    .cover-page-concierto-background-color
+        width 100%
+        height 100%
+        background linear-gradient(to right bottom,
+                                    rgba(verde-taliam, 0.85) 0%,
+                                    rgba(morado-taliam, 0.85) 100%) 
+        display flex 
+        flex-flow column wrap 
+        justify-content center 
+        align-items center 
+        position absolute
+        left 0
+        top 0
+        .container 
+            .row
+                &:nth-of-type(1)
+                    margin-top 35px
+                    margin-bottom 60px
+                    .col 
+                        p 
+                            text-align center
+                            color blanco
+                            position relative
+                            style_double_stripe(blanco)
+                            span 
+                                styles_span(blanco)
+                            &:nth-of-type(2)
+                                display none 
+                &:nth-of-type(2)
+                    margin-bottom 0
+.cover-page-message-final-container
+    width 100%
+    height 100vh
+    background-color blanco
+    position relative
+    left 0
+    top 0
+    .container-message
+        position absolute
+        left 50%
+        top 25%
+        -webkit-transform translateX(-50%)
+        transform translateX(-50%)
+        .row
+            margin-top 35px
+            margin-bottom 0
+            .col-message
+                p 
+                    color plomo
+                    text-align center
+                    style_double_stripe(verde-taliam)
+                    position relative
+                    span 
+                        styles_span(verde-taliam)
+    .footer-container
+        width 100%
+        height 145px
+        background-image url(../img/fondo-footer.jpg)
+        background-position center
+        background-size cover 
+        position absolute
+        left 0 
+        bottom 0
+        .footer
+            width 100%
+            height 75px
+            background-color rgba(azul-acero, 0.8)
+            display flex 
+            flex-flow row nowrap
+            justify-content center 
+            align-items center
+            position absolute
+            left 0
+            bottom 70px
+            .col 
+                display flex 
+                flex-flow row wrap
+                justify-content center 
+                align-items center 
+                a 
+                    font-size 1.3rem
+                    color blanco
+                    padding 10px 
+                    border-radius 50%
+                    border 2px solid blanco
+                    margin 0 30px
+        .copyright
+            width 100%
+            height 70px
+            background-color rgba(azul-acero, 0.8)
+            display flex
+            flex-flow row wrap 
+            justify-content center
+            position absolute
+            left 0
+            bottom 0
+            .container
+                display flex 
+                flex-flow row wrap 
+                justify-content center 
+                align-items center
+                .col 
+                    p 
+                        font-size 0.9rem
+                        color blanco
+                        text-align center
+                        span 
+                            styles_span(blanco)
+                            display inline-block
+                            margin-left 10px
+@media screen and (min-width: 600px)
+    header
+        nav
+            .nav-wrapper
+                .side-nav
+                    li
+                        margin-bottom 25px
+                        a 
+                            padding-left 50px 
+    .cover-page-principal-container
+        .cover-page-principal-background-color
+            .opening-message
+                .row 
+                    &:nth-of-type(1)
+                        margin-bottom 90px
+                        .col 
+                            p 
+                                width 500px
+                                &:nth-of-type(1)
+                                    margin-top 40px
+                                &:nth-of-type(2)
+                                    display block
+                                    margin-top 20px
+    .cover-page-remix-container
+        .container 
+            .row 
+                &:nth-of-type(1)
+                    margin-bottom 90px
+                    .col 
+                        p 
+                            width 500px
+                            &:nth-of-type(1)
+                                display none 
+                            &:nth-of-type(2)
+                                display block
+    .cover-page-new-songs-container
+        .cover-page-new-songs-background-color
+            .container
+                .row 
+                    &:nth-of-type(1)
+                        margin-bottom 90px
+                        .col 
+                            p 
+                                width 500px
+                                &:nth-of-type(1)
+                                    display none 
+                                &:nth-of-type(2)
+                                    display block
+    .cover-page-unique-feature-container
+        .container
+            .row
+                &:nth-of-type(1)
+                    margin-bottom 90px
+                    .col 
+                        p 
+                            width 500px
+                            &:nth-of-type(1)
+                                display none
+                            &:nth-of-type(2)
+                                display block
+    .cover-page-concierto-container
+        .cover-page-concierto-background-color
+            .container
+                .row 
+                    &:nth-of-type(1)
+                        margin-bottom 90px
+                        .col 
+                            p 
+                                width 500px
+                                &:nth-of-type(1)
+                                    display none
+                                &:nth-of-type(2)
+                                    display block
+@media screen and (min-width: 993px)
+    header
+        nav 
+            .nav-wrapper
+                .button-collapse
+                    display none
+                .hide-on-med-and-down
+                    position absolute
+                    right 0 
+                    top 0
+                    li 
+                        margin 0 15px
+                        a 
+                            height 60px
+                            font-size 1.3rem
+                            position relative
+                            &:hover 
+                                background-color verde-oscuro
+    .cover-page-principal-container
+        height 100vh
+        .cover-page-principal-background-color
+            .opening-message
+                .row 
+                    &:nth-of-type(1)
+                        margin-bottom 60px
+                        .col 
+                            .vertically-displacing-list
+                                ul 
+                                    li 
+                                        font-size 2.7rem
+                            p 
+                                width 600px
+                                &:nth-of-type(1)
+                                    margin-top 40px
+                                &:nth-of-type(2)
+                                    display block
+                                    margin-top 20px
+    .cover-page-remix-container
+        height 550px
+        .container 
+            .row 
+                &:nth-of-type(1)
+                    margin-bottom 60px
+                    .col 
+                        p 
+                            width 600px
+                            &:nth-of-type(1)
+                                display none 
+                            &:nth-of-type(2)
+                                display block
+    .cover-page-new-songs-container
+        height 550px
+        .cover-page-new-songs-background-color
+            .container
+                .row 
+                    &:nth-of-type(1)
+                        margin-bottom 60px
+                        .col 
+                            p 
+                                width 600px
+                                &:nth-of-type(1)
+                                    display none 
+                                &:nth-of-type(2)
+                                    display block
+    .cover-page-unique-feature-container
+        height 550px
+        .container
+            .row
+                &:nth-of-type(1)
+                    margin-bottom 60px
+                    .col 
+                        p 
+                            width 600px
+                            &:nth-of-type(1)
+                                display none
+                            &:nth-of-type(2)
+                                display block
+    .cover-page-concierto-container
+        height 550px
+        .cover-page-concierto-background-color
+            .container
+                .row 
+                    &:nth-of-type(1)
+                        margin-bottom 60px
+                        .col 
+                            p 
+                                width 600px
+                                &:nth-of-type(1)
+                                    display none
+                                &:nth-of-type(2)
+                                    display block
+    .cover-page-message-final-container
+        height 500px
+        .footer-container
+            .footer
+                .col 
+                    a 
+                        margin 0 60px
+        

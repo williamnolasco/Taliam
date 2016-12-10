@@ -1,0 +1,72 @@
+@import url(instagram.css)
+
+blanco = #fff    
+verde-taliam = #00c7c4
+morado-taliam = #6b47fa
+azul-acero = #1B2B69
+
+.footer-container
+    width 100%
+    height 165px
+    background-image url(../img/fondo-footer.jpg)
+    background-position center
+    background-size cover 
+    position relative
+    left 0 
+    bottom -70px
+    .footer
+        width 100%
+        height 75px
+        background-color rgba(azul-acero, 0.8)
+        display flex 
+        flex-flow row nowrap
+        justify-content center 
+        align-items center
+        position absolute
+        left 0
+        bottom 90px
+        .col 
+            display flex 
+            flex-flow row wrap
+            justify-content center 
+            align-items center 
+            a 
+                font-size 1.3rem
+                color blanco
+                padding 10px 
+                border-radius 50%
+                border 2px solid blanco
+                margin 0 30px
+    .copyright
+        width 100%
+        height 90px
+        background-color rgba(azul-acero, 0.8)
+        display flex
+        flex-flow row wrap 
+        justify-content center
+        position absolute
+        left 0
+        bottom 0
+        .container
+            display flex 
+            flex-flow row wrap 
+            justify-content center 
+            align-items center
+            .col 
+                p 
+                    font-size 1.1rem
+                    color blanco
+                    text-align center
+                    span 
+                        display inline-block
+                        font-size 1.9rem
+                        color blanco
+                        margin-left 10px
+@media screen and (min-width: 993px)
+    .footer-container
+        height 140px
+        .footer 
+            height 75px
+            bottom 65px
+        .copyright
+            height 65px
